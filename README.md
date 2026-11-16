@@ -2,6 +2,11 @@
 
 یک پروژه پایتون پیشرفته، ماژولار و حرفه‌ای برای **تحلیل بازار بیت‌کوین (BTC) و اتریوم (ETH)** همراه با محاسبات تحلیل تکنیکال و یک داشبورد تعاملی وب با استفاده از **Streamlit**.
 
+[![CI](https://github.com/alirezahs81/Bitcoin-Ethereum-Market-Analysis/actions/workflows/ci.yml/badge.svg)](https://github.com/alirezahs81/Bitcoin-Ethereum-Market-Analysis/actions/workflows/ci.yml)
+![Python](https://img.shields.io/badge/Python-3.13-blue?logo=python&logoColor=white)
+![Streamlit](https://img.shields.io/badge/Streamlit-Dashboard-FF4B4B?logo=streamlit&logoColor=white)
+![Plotly](https://img.shields.io/badge/Plotly-Visualization-3F4F97?logo=plotly&logoColor=white)
+
 این پروژه به‌گونه‌ای طراحی شده است که علاوه بر داشتن کدهای تمیز و استاندارد، همواره به دیتای زنده بازار متصل بوده و نیازی به فایل‌های CSV ثابت و حجیم ندارد.
 
 ---
@@ -22,7 +27,7 @@
 ## 📁 ساختار پروژه
 
 ```text
-crypto-market-analysis/
+Bitcoin-Ethereum-Market-Analysis/
 │
 ├── data/                  # ذخیره‌سازی محلی دیتای دریافت شده (خودکار)
 ├── src/                   # ماژول‌های اصلی پروژه
@@ -44,17 +49,17 @@ crypto-market-analysis/
 
 ### ۱. کلون کردن ریپازیتوری
 ```bash
-git clone https://github.com/YOUR_USERNAME/crypto-market-analysis.git
-cd crypto-market-analysis
+git clone https://github.com/alirezahs81/Bitcoin-Ethereum-Market-Analysis.git
+cd Bitcoin-Ethereum-Market-Analysis
 ```
 
 ### ۲. ساخت و فعال‌سازی محیط مجازی (Virtual Environment)
 ```bash
-python -m venv venv
+python -m venv .venv
 # در ویندوز:
 venv\Scripts\activate
 # در لینوکس / مک:
-source venv/bin/activate
+source .venv/bin/activate
 ```
 
 ### ۳. نصب وابستگی‌ها
@@ -73,6 +78,12 @@ streamlit run app.py
 ```
 
 پس از اجرای دستور، آدرس لوکال‌هاست (مثل `http://localhost:8501`) در ترمینال نمایش داده می‌شود که با کلیک روی آن می‌توانید وارد داشبورد شوید.
+
+
+### اجرای تست‌ها (pytest)
+```bash
+pytest tests/ -v
+```
 
 ---
 

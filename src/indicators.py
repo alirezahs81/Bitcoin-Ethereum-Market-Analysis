@@ -64,7 +64,7 @@ def add_all_indicators(df):
 if __name__ == "__main__":
     # تست ماژول روی دیتای ذخیره شده بیت‌کوین
     import os
-    from fetcher import update_and_save_data
+    from src.fetcher import update_and_save_data
     
     btc_df = update_and_save_data('BTC')
     btc_processed = add_all_indicators(btc_df)

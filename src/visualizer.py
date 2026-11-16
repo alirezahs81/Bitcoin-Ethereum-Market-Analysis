@@ -76,8 +76,8 @@ def plot_crypto_analysis(df, symbol_name="BTC"):
     return fig
 
 if __name__ == "__main__":
-    from fetcher import update_and_save_data
-    from indicators import add_all_indicators
+    from src.fetcher import update_and_save_data
+    from src.indicators import add_all_indicators
     
     # تست ماژول
     df = update_and_save_data('BTC')
